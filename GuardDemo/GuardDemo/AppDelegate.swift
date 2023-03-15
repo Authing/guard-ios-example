@@ -21,15 +21,25 @@ import Facebook
 import Linkedin
 import DingTalk
 
-let lark_scheme = "clia2b69a679b3a900b"
-let WECHAT_APPID = "wx1cddb15e280c0f67"
-let WECOM_APPID = "wwauthb67a4e1963a53716000081"
-let WECOM_CORPID = "wwb67a4e1963a53716"
-let WECOM_AGENTID = "1000081"
-let QQ_APPID = "102043018"
-let SINA_APPID = "884123079"
-let BAIDU_APPID = "30984028"
-let DINGTALK_APPID = "dingmtephhdvox58ox5d"
+let LARK_APPID = ""
+let LARK_SCHEME = ""
+let WECHAT_APPID = ""
+let WECOM_APPID = ""
+let WECOM_CORPID = ""
+let WECOM_AGENTID = ""
+let QQ_APPID = ""
+let SINA_APPID = ""
+let SINA_REDIRECT = ""
+let BAIDU_APPID = ""
+let BAIDU_APPKEY = ""
+let BAIDU_REDIRECT = ""
+let DINGTALK_APPID = ""
+let DINGTALK_BUNDLEID = ""
+let ONEAUTH_BUSINESSID = ""
+let GOOGLE_CLIENTID = ""
+let GOOGLE_SERVER_CLIENTID = ""
+let LINKEDIN_CLIENTID = ""
+let LINKEDIN_REDIRECT = ""
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,28 +53,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WechatLogin.registerApp(appId: WECHAT_APPID, universalLink: "https://h5-static.authing.co/app/")
         WeCom.registerApp(appId: WECOM_APPID, corpId: WECOM_CORPID, agentId: WECOM_AGENTID, isProxyDevelopment: false)
-        OneAuth.register(businessId: "fdaf299f9d8f43c0a41ad3c2ca5c02f6")
-        LarkLogin.setupLark("cli_a2b69a679b3a900b", Scheme: lark_scheme)
-        Google.register(clientID: "416092875790-gk29o58aein6vrkneb3vd1bki91b5his.apps.googleusercontent.com", serverClientId: "416092875790-usvrkoj06srkmalel5ld6selsk2rq35r.apps.googleusercontent.com")
+        OneAuth.register(businessId: ONEAUTH_BUSINESSID)
+        LarkLogin.setupLark(LARK_APPID, Scheme: LARK_SCHEME)
+        Google.register(clientID: GOOGLE_CLIENTID, serverClientId: GOOGLE_SERVER_CLIENTID)
         Facebook.register(application, didFinishLaunchingWithOptions: launchOptions)
         Tencent.register(appId: QQ_APPID, universalLink: "https://h5-static.authing.co/qq_conn/102043018")
-        Weibo.register(appId: SINA_APPID, scope: "all", redirectURI:"https://core.authing.cn/connection/social/me-wbmb/63156d74f35ddccf48ca0ef0/callback", universalLink: "https://h5-static.authing.co")
-        Baidu.register(appKey: "W7q5yrakQpnjYStDkNGIxmGK", appId: BAIDU_APPID, scope: "basic,super_msg", redirectURI: "https://core.authing.cn/connection/social/baidu/6204d0a406f0423c78f243ae/callback")
-        Linkedin.register(clientId: "78pbphbop997ms", permissions: "r_liteprofile", redirectURI: "https://core.mysql.authing-inc.co/connection/social/linkedin/6391c767ddbe9b6ee8db0fb2/callback")
-        DingTalk.register(appId: DINGTALK_APPID, bundleId: "cn.authing.mobile")
+        Weibo.register(appId: SINA_APPID, scope: "all", redirectURI: SINA_REDIRECT , universalLink: "https://h5-static.authing.co")
+        Baidu.register(appKey: BAIDU_APPKEY, appId: BAIDU_APPID, scope: "basic,super_msg", redirectURI: BAIDU_REDIRECT)
+        Linkedin.register(clientId: LINKEDIN_CLIENTID, permissions: "r_liteprofile", redirectURI: LINKEDIN_REDIRECT)
+        DingTalk.register(appId: DINGTALK_APPID, bundleId: DINGTALK_BUNDLEID)
         Authing.start("6244398c8a4575cdb2cb5656");
-
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
-            print("Permission granted: \(granted)")
-            guard granted else { return }
-            UNUserNotificationCenter.current().getNotificationSettings { settings in
-                print("Notification settings: \(settings)")
-                guard settings.authorizationStatus == .authorized else { return }
-                DispatchQueue.main.async {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
-            }
-        }
         return true
     }
 
@@ -96,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         
-        if "\(url)".contains(lark_scheme) {
+        if "\(url)".contains(LARK_SCHEME) {
             return LarkLogin.handleUrl(url: url)
         } else if "\(url)".contains(Facebook.getAppId()) {
             return Facebook.application(app, open: url, options: options)

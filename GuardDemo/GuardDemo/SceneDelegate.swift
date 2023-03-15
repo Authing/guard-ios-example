@@ -68,7 +68,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, WXApiDelegate {
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         if let url = URLContexts.first?.url{
-            if "\(url)".contains(lark_scheme) {
+            if "\(url)".contains(LARK_SCHEME) {
                 _ = LarkLogin.handleUrl(url: url)
             } else if "\(url)".contains(WECHAT_APPID) {
                 _ =  WechatLogin.handleOpenURL(url: url)

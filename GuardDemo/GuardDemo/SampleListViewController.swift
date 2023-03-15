@@ -7,10 +7,12 @@
 
 import Guard
 import UIKit
+import OneAuth
 
 class SampleListViewController: UITableViewController {
 
-    let from = ["Authing 登录",
+    let from = ["Authing Login",
+                "Biometric Authentication",
                 "手机号一键登录",
                 "MFA",
                 "用户信息补全",
@@ -41,7 +43,7 @@ class SampleListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         switch from[indexPath.row] {
-        case "Authing 登录":
+        case "Authing Login":
             Authing.start("6244398c8a4575cdb2cb5656")
             let flow = AuthFlow()
             flow.UIConfig = AuthFlowUIConfig()
@@ -50,12 +52,24 @@ class SampleListViewController: UITableViewController {
                 self?.goHome(userInfo: userInfo)
             }
             return
+        case "Biometric Authentication":
+            Authing.start("64006a897ee99ecbba8c8b16")
+            let flow = AuthFlow()
+            flow.start { [weak self] code, message, userInfo in
+                self?.goHome(userInfo: userInfo)
+            }
+            return
         case "手机号一键登录":
-                let vc = OneClickViewController(nibName: "OneClick", bundle: nil)
-                self.navigationController?.pushViewController(vc, animated: true)
+            OneAuth.start(self) { [weak self]  code, message, userInfo in
+                if (code == 200 && userInfo != nil) {
+                    self?.goHome(userInfo: userInfo)
+                } else {
+                    print(message ?? "OneAuth unknow error")
+                }
+            }
             return
         case "MFA":
-            Authing.start("61c173ada0e3aec651b1a1d1")
+            Authing.start("6411662375e3ccdf766d9f86")
             AuthFlow().start { [weak self] code, message, userInfo in
                 self?.goHome(userInfo: userInfo)
             }
@@ -67,10 +81,12 @@ class SampleListViewController: UITableViewController {
             }
             return
         case "WebView":
+            Authing.start("6244398c8a4575cdb2cb5656")
             let vc = WebViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             return
         case "AppAuth":
+            Authing.start("6244398c8a4575cdb2cb5656")
             let vc = AppAuthViewController(nibName: "AppAuth", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             return
