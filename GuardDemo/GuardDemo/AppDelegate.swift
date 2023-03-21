@@ -20,6 +20,8 @@ import Baidu
 import Facebook
 import Linkedin
 import DingTalk
+import Github
+import Gitee
 
 let LARK_APPID = ""
 let LARK_SCHEME = ""
@@ -40,6 +42,10 @@ let GOOGLE_CLIENTID = ""
 let GOOGLE_SERVER_CLIENTID = ""
 let LINKEDIN_CLIENTID = ""
 let LINKEDIN_REDIRECT = ""
+let GITHUB_APPID = ""
+let GITHUB_REDIRECT = ""
+let GITEE_REDIRECT = ""
+let GITEE_APPID = ""
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -62,6 +68,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Baidu.register(appKey: BAIDU_APPKEY, appId: BAIDU_APPID, scope: "basic,super_msg", redirectURI: BAIDU_REDIRECT)
         Linkedin.register(clientId: LINKEDIN_CLIENTID, permissions: "r_liteprofile", redirectURI: LINKEDIN_REDIRECT)
         DingTalk.register(appId: DINGTALK_APPID, bundleId: DINGTALK_BUNDLEID)
+        Github.register(appId: GITHUB_APPID, redirectURI: GITHUB_REDIRECT)
+        Gitee.register(appId: GITEE_APPID, redirectURI: GITEE_REDIRECT)
+
         Authing.start("6244398c8a4575cdb2cb5656");
         return true
     }
