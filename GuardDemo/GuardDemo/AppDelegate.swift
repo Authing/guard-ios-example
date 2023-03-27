@@ -22,6 +22,11 @@ import Linkedin
 import DingTalk
 import Github
 import Gitee
+import Douyin
+import Kuaishou
+import GitLab
+import Xiaomi
+import AppAuthCore
 
 let LARK_APPID = ""
 let LARK_SCHEME = ""
@@ -46,13 +51,20 @@ let GITHUB_APPID = ""
 let GITHUB_REDIRECT = ""
 let GITEE_REDIRECT = ""
 let GITEE_APPID = ""
+let GITLAB_APPID = ""
+let GITLAB_REDIRECT = ""
+let DOUYIN_APPID = ""
+let KUAISHOU_APPID = ""
+let UNIVERSAL_LINK = ""
+let XIAOMI_APPID = ""
+let XIAOMI_REDIRECTURL = ""
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var currentAuthorizationFlow: OIDExternalUserAgentSession?
     var window:UIWindow?
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // Override point for customization after application launch.
@@ -70,7 +82,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DingTalk.register(appId: DINGTALK_APPID, bundleId: DINGTALK_BUNDLEID)
         Github.register(appId: GITHUB_APPID, redirectURI: GITHUB_REDIRECT)
         Gitee.register(appId: GITEE_APPID, redirectURI: GITEE_REDIRECT)
-
+        GitLab.register(appId: GITLAB_APPID, redirectURI: GITLAB_REDIRECT)
+        Douyin.register(appId: DOUYIN_APPID, application, didFinishLaunchingWithOptions: launchOptions)
+        Kuaishou.register(appId: KUAISHOU_APPID, universalLink: UNIVERSAL_LINK)
+        Xiaomi.register(appId: XIAOMI_APPID, redirectUrl: XIAOMI_REDIRECTURL)
         Authing.start("6244398c8a4575cdb2cb5656");
         return true
     }

@@ -21,22 +21,27 @@
 		7EB5CE5427CF70E900BE3252 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5CE5327CF70E900BE3252 /* WebViewController.swift */; };
 		7ED434D52775BA7000893EDD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ED434D72775BA7000893EDD /* Localizable.strings */; };
 		A81790F329BF490A00C94294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81790F229BF490A00C94294 /* SceneDelegate.swift */; };
-		A843B54129C9E033008D94AC /* Baidu in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54029C9E033008D94AC /* Baidu */; };
-		A843B54329C9E033008D94AC /* DingTalk in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54229C9E033008D94AC /* DingTalk */; };
-		A843B54529C9E033008D94AC /* Facebook in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54429C9E033008D94AC /* Facebook */; };
-		A843B54729C9E033008D94AC /* Gitee in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54629C9E033008D94AC /* Gitee */; };
-		A843B54929C9E033008D94AC /* Github in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54829C9E033008D94AC /* Github */; };
-		A843B54B29C9E033008D94AC /* Google in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54A29C9E033008D94AC /* Google */; };
-		A843B54D29C9E033008D94AC /* LarkLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54C29C9E033008D94AC /* LarkLogin */; };
-		A843B54F29C9E033008D94AC /* Linkedin in Frameworks */ = {isa = PBXBuildFile; productRef = A843B54E29C9E033008D94AC /* Linkedin */; };
-		A843B55129C9E033008D94AC /* OneAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55029C9E033008D94AC /* OneAuth */; };
-		A843B55329C9E033008D94AC /* Tencent in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55229C9E033008D94AC /* Tencent */; };
-		A843B55529C9E033008D94AC /* WeCom in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55429C9E033008D94AC /* WeCom */; };
-		A843B55729C9E033008D94AC /* WebAuthn in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55629C9E033008D94AC /* WebAuthn */; };
-		A843B55929C9E033008D94AC /* Wechat in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55829C9E033008D94AC /* Wechat */; };
-		A843B55B29C9E033008D94AC /* Weibo in Frameworks */ = {isa = PBXBuildFile; productRef = A843B55A29C9E033008D94AC /* Weibo */; };
+		A8183ABA29D17F0300A1050D /* Baidu in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AB929D17F0300A1050D /* Baidu */; };
+		A8183ABC29D17F0300A1050D /* DingTalk in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ABB29D17F0300A1050D /* DingTalk */; };
+		A8183ABE29D17F0300A1050D /* Douyin in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ABD29D17F0300A1050D /* Douyin */; };
+		A8183AC029D17F0300A1050D /* Facebook in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ABF29D17F0300A1050D /* Facebook */; };
+		A8183AC229D17F0300A1050D /* GitLab in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AC129D17F0300A1050D /* GitLab */; };
+		A8183AC429D17F0300A1050D /* Gitee in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AC329D17F0300A1050D /* Gitee */; };
+		A8183AC629D17F0300A1050D /* Github in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AC529D17F0300A1050D /* Github */; };
+		A8183AC829D17F0300A1050D /* Google in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AC729D17F0300A1050D /* Google */; };
+		A8183ACA29D17F0300A1050D /* Kuaishou in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AC929D17F0300A1050D /* Kuaishou */; };
+		A8183ACC29D17F0300A1050D /* LarkLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ACB29D17F0300A1050D /* LarkLogin */; };
+		A8183ACE29D17F0300A1050D /* Linkedin in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ACD29D17F0300A1050D /* Linkedin */; };
+		A8183AD029D17F0300A1050D /* OneAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ACF29D17F0300A1050D /* OneAuth */; };
+		A8183AD229D17F0300A1050D /* Tencent in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AD129D17F0300A1050D /* Tencent */; };
+		A8183AD429D17F0300A1050D /* WeCom in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AD329D17F0300A1050D /* WeCom */; };
+		A8183AD629D17F0300A1050D /* WebAuthn in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AD529D17F0300A1050D /* WebAuthn */; };
+		A8183AD829D17F0300A1050D /* Wechat in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AD729D17F0300A1050D /* Wechat */; };
+		A8183ADA29D17F0300A1050D /* Weibo in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AD929D17F0300A1050D /* Weibo */; };
+		A8183ADC29D17F0300A1050D /* Xiaomi in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ADB29D17F0300A1050D /* Xiaomi */; };
+		A8183ADF29D17F3600A1050D /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8183ADE29D17F3600A1050D /* AppAuth */; };
+		A8183AE129D17F3600A1050D /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8183AE029D17F3600A1050D /* AppAuthCore */; };
 		A8C813A829C073FA0083D9B9 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8C813A729C073FA0083D9B9 /* Guard */; };
-		A8C813C429C074D10083D9B9 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A8C813C329C074D10083D9B9 /* AppAuth */; };
 		A8CF1CF9288FFAB50072A17F /* LarkSSO.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A8CF1CF8288FFAB50072A17F /* LarkSSO.bundle */; };
 		A8EC269E28A6424700B85AF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8EC269D28A6424700B85AF1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -109,22 +114,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A843B55329C9E033008D94AC /* Tencent in Frameworks */,
-				A843B54F29C9E033008D94AC /* Linkedin in Frameworks */,
-				A843B54D29C9E033008D94AC /* LarkLogin in Frameworks */,
-				A843B54929C9E033008D94AC /* Github in Frameworks */,
-				A843B54129C9E033008D94AC /* Baidu in Frameworks */,
-				A843B55129C9E033008D94AC /* OneAuth in Frameworks */,
+				A8183AD429D17F0300A1050D /* WeCom in Frameworks */,
+				A8183AD229D17F0300A1050D /* Tencent in Frameworks */,
+				A8183ACC29D17F0300A1050D /* LarkLogin in Frameworks */,
+				A8183ABE29D17F0300A1050D /* Douyin in Frameworks */,
+				A8183ABA29D17F0300A1050D /* Baidu in Frameworks */,
+				A8183ADC29D17F0300A1050D /* Xiaomi in Frameworks */,
+				A8183AC029D17F0300A1050D /* Facebook in Frameworks */,
+				A8183AC429D17F0300A1050D /* Gitee in Frameworks */,
+				A8183AD029D17F0300A1050D /* OneAuth in Frameworks */,
+				A8183ADA29D17F0300A1050D /* Weibo in Frameworks */,
+				A8183ADF29D17F3600A1050D /* AppAuth in Frameworks */,
+				A8183AC229D17F0300A1050D /* GitLab in Frameworks */,
+				A8183ACA29D17F0300A1050D /* Kuaishou in Frameworks */,
+				A8183AD629D17F0300A1050D /* WebAuthn in Frameworks */,
+				A8183AC829D17F0300A1050D /* Google in Frameworks */,
+				A8183ACE29D17F0300A1050D /* Linkedin in Frameworks */,
+				A8183AC629D17F0300A1050D /* Github in Frameworks */,
+				A8183AE129D17F3600A1050D /* AppAuthCore in Frameworks */,
+				A8183ABC29D17F0300A1050D /* DingTalk in Frameworks */,
+				A8183AD829D17F0300A1050D /* Wechat in Frameworks */,
 				A8C813A829C073FA0083D9B9 /* Guard in Frameworks */,
-				A843B54B29C9E033008D94AC /* Google in Frameworks */,
-				A843B54329C9E033008D94AC /* DingTalk in Frameworks */,
-				A843B55529C9E033008D94AC /* WeCom in Frameworks */,
-				A843B55929C9E033008D94AC /* Wechat in Frameworks */,
-				A843B55B29C9E033008D94AC /* Weibo in Frameworks */,
-				A843B54729C9E033008D94AC /* Gitee in Frameworks */,
-				A843B54529C9E033008D94AC /* Facebook in Frameworks */,
-				A843B55729C9E033008D94AC /* WebAuthn in Frameworks */,
-				A8C813C429C074D10083D9B9 /* AppAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,21 +266,26 @@
 			name = GuardDemo;
 			packageProductDependencies = (
 				A8C813A729C073FA0083D9B9 /* Guard */,
-				A8C813C329C074D10083D9B9 /* AppAuth */,
-				A843B54029C9E033008D94AC /* Baidu */,
-				A843B54229C9E033008D94AC /* DingTalk */,
-				A843B54429C9E033008D94AC /* Facebook */,
-				A843B54629C9E033008D94AC /* Gitee */,
-				A843B54829C9E033008D94AC /* Github */,
-				A843B54A29C9E033008D94AC /* Google */,
-				A843B54C29C9E033008D94AC /* LarkLogin */,
-				A843B54E29C9E033008D94AC /* Linkedin */,
-				A843B55029C9E033008D94AC /* OneAuth */,
-				A843B55229C9E033008D94AC /* Tencent */,
-				A843B55429C9E033008D94AC /* WeCom */,
-				A843B55629C9E033008D94AC /* WebAuthn */,
-				A843B55829C9E033008D94AC /* Wechat */,
-				A843B55A29C9E033008D94AC /* Weibo */,
+				A8183AB929D17F0300A1050D /* Baidu */,
+				A8183ABB29D17F0300A1050D /* DingTalk */,
+				A8183ABD29D17F0300A1050D /* Douyin */,
+				A8183ABF29D17F0300A1050D /* Facebook */,
+				A8183AC129D17F0300A1050D /* GitLab */,
+				A8183AC329D17F0300A1050D /* Gitee */,
+				A8183AC529D17F0300A1050D /* Github */,
+				A8183AC729D17F0300A1050D /* Google */,
+				A8183AC929D17F0300A1050D /* Kuaishou */,
+				A8183ACB29D17F0300A1050D /* LarkLogin */,
+				A8183ACD29D17F0300A1050D /* Linkedin */,
+				A8183ACF29D17F0300A1050D /* OneAuth */,
+				A8183AD129D17F0300A1050D /* Tencent */,
+				A8183AD329D17F0300A1050D /* WeCom */,
+				A8183AD529D17F0300A1050D /* WebAuthn */,
+				A8183AD729D17F0300A1050D /* Wechat */,
+				A8183AD929D17F0300A1050D /* Weibo */,
+				A8183ADB29D17F0300A1050D /* Xiaomi */,
+				A8183ADE29D17F3600A1050D /* AppAuth */,
+				A8183AE029D17F3600A1050D /* AppAuthCore */,
 			);
 			productName = GuardDemo;
 			productReference = 7E959415274CB4E2001459C5 /* GuardDemo.app */;
@@ -305,8 +320,8 @@
 			mainGroup = 7E95940C274CB4E2001459C5;
 			packageReferences = (
 				A8C813A629C073FA0083D9B9 /* XCRemoteSwiftPackageReference "guard-ios" */,
-				A8C813C229C074D10083D9B9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
-				A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */,
+				A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */,
+				A8183ADD29D17F3600A1050D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
 			);
 			productRefGroup = 7E959416274CB4E2001459C5 /* Products */;
 			projectDirPath = "";
@@ -611,9 +626,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */ = {
+		A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Authing/authing-binary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A8183ADD29D17F3600A1050D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -627,96 +650,113 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		A8C813C229C074D10083D9B9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/openid/AppAuth-iOS";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A843B54029C9E033008D94AC /* Baidu */ = {
+		A8183AB929D17F0300A1050D /* Baidu */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Baidu;
 		};
-		A843B54229C9E033008D94AC /* DingTalk */ = {
+		A8183ABB29D17F0300A1050D /* DingTalk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = DingTalk;
 		};
-		A843B54429C9E033008D94AC /* Facebook */ = {
+		A8183ABD29D17F0300A1050D /* Douyin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
+			productName = Douyin;
+		};
+		A8183ABF29D17F0300A1050D /* Facebook */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Facebook;
 		};
-		A843B54629C9E033008D94AC /* Gitee */ = {
+		A8183AC129D17F0300A1050D /* GitLab */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
+			productName = GitLab;
+		};
+		A8183AC329D17F0300A1050D /* Gitee */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Gitee;
 		};
-		A843B54829C9E033008D94AC /* Github */ = {
+		A8183AC529D17F0300A1050D /* Github */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Github;
 		};
-		A843B54A29C9E033008D94AC /* Google */ = {
+		A8183AC729D17F0300A1050D /* Google */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Google;
 		};
-		A843B54C29C9E033008D94AC /* LarkLogin */ = {
+		A8183AC929D17F0300A1050D /* Kuaishou */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
+			productName = Kuaishou;
+		};
+		A8183ACB29D17F0300A1050D /* LarkLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = LarkLogin;
 		};
-		A843B54E29C9E033008D94AC /* Linkedin */ = {
+		A8183ACD29D17F0300A1050D /* Linkedin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Linkedin;
 		};
-		A843B55029C9E033008D94AC /* OneAuth */ = {
+		A8183ACF29D17F0300A1050D /* OneAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = OneAuth;
 		};
-		A843B55229C9E033008D94AC /* Tencent */ = {
+		A8183AD129D17F0300A1050D /* Tencent */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Tencent;
 		};
-		A843B55429C9E033008D94AC /* WeCom */ = {
+		A8183AD329D17F0300A1050D /* WeCom */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = WeCom;
 		};
-		A843B55629C9E033008D94AC /* WebAuthn */ = {
+		A8183AD529D17F0300A1050D /* WebAuthn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = WebAuthn;
 		};
-		A843B55829C9E033008D94AC /* Wechat */ = {
+		A8183AD729D17F0300A1050D /* Wechat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Wechat;
 		};
-		A843B55A29C9E033008D94AC /* Weibo */ = {
+		A8183AD929D17F0300A1050D /* Weibo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A843B53F29C9E033008D94AC /* XCRemoteSwiftPackageReference "authing-binary" */;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
 			productName = Weibo;
+		};
+		A8183ADB29D17F0300A1050D /* Xiaomi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183AB829D17F0300A1050D /* XCRemoteSwiftPackageReference "authing-binary" */;
+			productName = Xiaomi;
+		};
+		A8183ADE29D17F3600A1050D /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183ADD29D17F3600A1050D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		A8183AE029D17F3600A1050D /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8183ADD29D17F3600A1050D /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
 		};
 		A8C813A729C073FA0083D9B9 /* Guard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8C813A629C073FA0083D9B9 /* XCRemoteSwiftPackageReference "guard-ios" */;
 			productName = Guard;
-		};
-		A8C813C329C074D10083D9B9 /* AppAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A8C813C229C074D10083D9B9 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
-			productName = AppAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
