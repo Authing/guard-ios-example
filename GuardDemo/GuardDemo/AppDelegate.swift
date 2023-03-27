@@ -86,6 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Douyin.register(appId: DOUYIN_APPID, application, didFinishLaunchingWithOptions: launchOptions)
         Kuaishou.register(appId: KUAISHOU_APPID, universalLink: UNIVERSAL_LINK)
         Xiaomi.register(appId: XIAOMI_APPID, redirectUrl: XIAOMI_REDIRECTURL)
+        
         Authing.start("6244398c8a4575cdb2cb5656");
         return true
     }

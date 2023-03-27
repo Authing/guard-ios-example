@@ -13,6 +13,7 @@ class SampleListViewController: UITableViewController {
 
     let from = ["Authing Login",
                 "Biometric Authentication",
+                "Social Hyper Component",
                 "手机号一键登录",
                 "MFA",
                 "用户信息补全",
@@ -41,7 +42,6 @@ class SampleListViewController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         switch from[indexPath.row] {
         case "Authing Login":
             Authing.start("6244398c8a4575cdb2cb5656")
@@ -58,6 +58,10 @@ class SampleListViewController: UITableViewController {
             flow.start { [weak self] code, message, userInfo in
                 self?.goHome(userInfo: userInfo)
             }
+            return
+        case "Social Hyper Component":
+            let vc: AuthViewController? = AuthViewController(nibName: "Test", bundle: Bundle(for: Self.self))
+            self.navigationController?.pushViewController(vc!, animated: true)
             return
         case "手机号一键登录":
             OneAuth.start(self) { [weak self]  code, message, userInfo in

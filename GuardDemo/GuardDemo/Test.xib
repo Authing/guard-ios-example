@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,19 +19,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As a test XIB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34r-t6-V1I">
-                    <rect key="frame" x="20" y="97" width="374" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social identities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34r-t6-V1I">
+                    <rect key="frame" x="20" y="101" width="374" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoI-Lx-zuQ" customClass="DouyinLoginButton" customModule="Douyin">
+                    <rect key="frame" x="154" y="423" width="106" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3wS-un-obA"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPl-Gt-yXp" customClass="WechatLoginButton" customModule="Wechat">
+                    <rect key="frame" x="24" y="423" width="106" height="50"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XM1-0G-fr5" customClass="GithubLoginButton" customModule="Github">
+                    <rect key="frame" x="284" y="423" width="106" height="50"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="34r-t6-V1I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0R1-pr-tES"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="top" secondItem="mPl-Gt-yXp" secondAttribute="top" id="8Sh-to-1XO"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QFc-SO-92S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XM1-0G-fr5" secondAttribute="trailing" constant="24" id="Teh-1Z-O41"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="leading" secondItem="mPl-Gt-yXp" secondAttribute="trailing" constant="24" id="VYQ-K3-P73"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="height" secondItem="mPl-Gt-yXp" secondAttribute="height" id="WSe-5W-wLG"/>
+                <constraint firstItem="mPl-Gt-yXp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="WsI-Re-wzR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="34r-t6-V1I" secondAttribute="trailing" constant="20" id="Y5t-Zx-wZ0"/>
+                <constraint firstItem="XM1-0G-fr5" firstAttribute="top" secondItem="mPl-Gt-yXp" secondAttribute="top" id="beK-pa-8S8"/>
                 <constraint firstItem="34r-t6-V1I" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="53" id="ccX-aP-nIL"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="width" secondItem="mPl-Gt-yXp" secondAttribute="width" id="duG-aA-848"/>
+                <constraint firstItem="XM1-0G-fr5" firstAttribute="width" secondItem="mPl-Gt-yXp" secondAttribute="width" id="evc-YB-Zcb"/>
+                <constraint firstItem="XM1-0G-fr5" firstAttribute="height" secondItem="mPl-Gt-yXp" secondAttribute="height" id="hqJ-wW-hCF"/>
+                <constraint firstItem="XM1-0G-fr5" firstAttribute="leading" secondItem="qoI-Lx-zuQ" secondAttribute="trailing" constant="24" id="on0-R6-xIr"/>
+                <constraint firstItem="qoI-Lx-zuQ" firstAttribute="centerY" secondItem="mPl-Gt-yXp" secondAttribute="centerY" id="qfd-eN-uTq"/>
+                <constraint firstItem="XM1-0G-fr5" firstAttribute="centerY" secondItem="mPl-Gt-yXp" secondAttribute="centerY" id="uzY-gd-Vno"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </view>
